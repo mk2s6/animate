@@ -11,8 +11,13 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
 	canvas.height = window.innerHeight;
 	
-	init();
+	if (innerWidth < 500px) {
+
+		init(50);
+	}
+	init(100);
 });	
+
 
 var Color = [
 		'violet',
@@ -59,9 +64,9 @@ function Circle (x, y, dx , dy, radius, color) {
 
 
 var circleArray = [];
-function init () {
+function init (value) {
 	circleArray = [];
-	for (var i = 0; i < 100; i++) {
+	for (var i = 0; i < value; i++) {
 		
 		var radius = (Math.random() * 15) + 4;
 		var x = Math.random() * (innerWidth - (radius * 2)) + radius;
