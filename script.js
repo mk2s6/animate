@@ -11,7 +11,7 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
 	canvas.height = window.innerHeight;
 	
-	if (innerWidth < 500px) {
+	if (window.innerWidth < 500) {
 
 		init(50);
 	}
@@ -80,7 +80,7 @@ function init (value) {
 }
 
 console.log(circleArray);
- init();
+ init(100);
 animate();
 function animate () {
 
