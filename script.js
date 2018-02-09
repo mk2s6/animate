@@ -1,8 +1,11 @@
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
+const body = document.querySelector('body');
 
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
+
+body.style['background-color'] = 'white';
 
 window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
@@ -36,7 +39,6 @@ function Circle (x, y, dx , dy, radius, color) {
 		c.arc(this.x, this.y, this.radius, 0 , Math.PI * 2, false);
 		c.fill();
 		c.fillStyle = this.color;
-		c.stroke();
 	
 	}
 
