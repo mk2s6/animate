@@ -80,7 +80,7 @@ function init (value) {
 }
 
 console.log(circleArray);
- init();
+ init(100);
 animate();
 function animate () {
 
