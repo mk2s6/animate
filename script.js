@@ -11,10 +11,10 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
 	canvas.height = window.innerHeight;
 	
-	if (innerWidth < 500px) {
+// 	if (innerWidth < 500px) {
 
-		init(50);
-	}
+// 		init(50);
+// 	}
 	init(100);
 });	
 
