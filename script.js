@@ -11,10 +11,6 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
 	canvas.height = window.innerHeight;
 	
-	if (window.innerWidth < 500) {
-
-		init(50);
-	}
 	init(100);
 });	
 
