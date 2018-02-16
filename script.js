@@ -11,7 +11,7 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;	
 	canvas.height = window.innerHeight;
 	
-	init(100);
+	init(50);
 });	
 
 
@@ -76,7 +76,7 @@ function init (value) {
 }
 
 console.log(circleArray);
- init(100);
+ init(50);
 animate();
 function animate () {
 
